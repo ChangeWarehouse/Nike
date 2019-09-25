@@ -532,7 +532,6 @@
 
 <!-- wrapper -->
 <div id="wrapper">
-
     <!-- navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="brand">
@@ -632,9 +631,7 @@
 
     </nav><!--/nav -->
     <!-- END NAVBAR -->
-
     <!-- LEFT SIDEBAR -->
-
     <div id="sidebar-nav" class="sidebar">
         <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 95%;">
             <div class="sidebar-scroll" style="overflow: hidden; width: auto; height: 95%;">
@@ -683,7 +680,7 @@
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="{% url 'upload' %}">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                      stroke-linejoin="round" class="feather feather-grid">
@@ -697,7 +694,7 @@
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="{% url 'maps' %}">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                      stroke-linejoin="round" class="feather feather-map">
@@ -784,8 +781,6 @@
         </div>
 
     </div>
-
-
     <!-- MAIN -->
     <div class="main" style="padding-top: 90px">
 
@@ -806,21 +801,15 @@
 
     </div>
     <!-- END MAIN -->
-
     <div class="clearfix"></div>
-
 </div>
 <!-- END WRAPPER -->
-
-
 <!--jquery-1.12.4.min.js-->
 <script src="{% static 'assets/js/jquery.min.js' %}"></script>
-
 <!--chartist.min.js-->
 <script src="{% static 'assets/chartist/js/chartist.min.js' %}"></script>
 <script src="{% static 'assets/chartist/js/chartist-tooltip-plugin.js' %}"></script>
 <script src="{% static 'assets/chartist/js/chartist-custom.js' %}"></script>
-
 <!--bootstrap.min.js-->
 <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
 
@@ -840,6 +829,7 @@
 
 <!--Custom JS-->
 <script src="{% static 'assets/js/custom.js' %}"></script>
+<script src="{% static 'assets/js/datamaps.world.min.js' %}"></script>
 
 {% block js %}
 
